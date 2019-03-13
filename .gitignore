@@ -1,7 +1,9 @@
-*.ipynb_checkpoints
-jin_note_jupyter.ipynb
-jin_note_markdown.ipynb
-algorithm/
 */data/
 */models/
+
+algorithm/
+
+jin_note_jupyter.ipynb
+
+*.ipynb_checkpoints
 *.nii
