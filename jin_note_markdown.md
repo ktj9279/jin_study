@@ -428,32 +428,14 @@ or
 <img src="./figures/Octocat.png" alt="Octocat" width="200" height="200">
 
 
-[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" style="width:200px;"></center>](https://github.com/ktj9279/jin_study)
+[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" width="200"></center>](https://github.com/ktj9279/jin_study)
 ```
 
 
 **Output:**  
 
 
-<img src="./figures/Octocat.png" alt="Octocat" width="200">
-
-
-<img src="./figures/Octocat.png" alt="Octocat" style="width:50;">
-
-
-<img src="./figures/Octocat.png" alt="Octocat" style="width:50px">
-
-
-<img src="./figures/Octocat.png" alt="Octocat" style="width:50%;">
-
-
-[<img src="./figures/Octocat.png" alt="Octocat" style="width:200px;">](https://github.com/ktj9279/jin_study)
-
-
-[<img src="./figures/Octocat.png" alt="Octocat" title="Octocat" style="width:200px;">](https://github.com/ktj9279/jin_study)
-
-
-[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" style="width:200px;"></center>](https://github.com/ktj9279/jin_study)
+[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" width="200"></center>](https://github.com/ktj9279/jin_study){: target="_blank"}
 
 
 ---
