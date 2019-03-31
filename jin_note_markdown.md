@@ -1,5 +1,5 @@
 # Markdown
----
+
 
 * [Markdown](https://daringfireball.net/projects/markdown/) is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
 * Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
@@ -12,8 +12,11 @@
    * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
 
 
-## Contents
 ---
+
+
+## Contents
+
 
 1. [Headings](#Headings)
 2. [Styling Text](#Styling-Text)
@@ -31,8 +34,11 @@
 14. [Emoji](#Emoji)
 
 
-## Headings
 ---
+
+
+## Headings
+
 
 **Markdown code:**
 
@@ -56,10 +62,13 @@
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
+
+
+---
 
 
 ## Styling Text
----
+
 
 **Markdown code:**
 
@@ -81,17 +90,19 @@ _Italic_
 ~~Strikethrough~~
 
 
-## Blockquotes (Quoting Text)
 ---
+
+
+## Blockquotes (Quoting Text)
+
 
 **Markdown code:**
 
 
 ```markdown
 > Quote
-   * 1
-      * 2
-         * 3
+>    * 1
+>       * 2
 
 
 > Quote 1
@@ -101,8 +112,6 @@ _Italic_
 >>> Quote 3
 >>
 >>>> Quote 4
->>>
->>>>> Quote 5
 ```
 
 
@@ -110,9 +119,8 @@ _Italic_
 
 
 > Quote
-   * 1
-      * 2
-         * 3
+>    * 1
+>       * 2
 
 
 > Quote 1
@@ -122,12 +130,13 @@ _Italic_
 >>> Quote 3
 >>
 >>>> Quote 4
->>>
->>>>> Quote 5
+
+
+---
 
 
 ## Quoting Code
----
+
 
 **Markdown code:**
 
@@ -150,7 +159,7 @@ import numpy as np
 ```
 
 
-※ Use triple backticks without a backslash.
+※ Use triple backticks only without backslashs.
 
 
 **Output:**  
@@ -162,7 +171,7 @@ import numpy as np
 Hello `Quote` world!
 
 
-* Distinct block (triple backticks)
+* Distinct block
 
 
 ```python
@@ -170,8 +179,11 @@ import numpy as np
 ```
 
 
-## Links
 ---
+
+
+## Links
+
 
 **Markdown code:**
 
@@ -203,10 +215,13 @@ https://github.com/ktj9279/jin_study
 
 
 [Jin's GitHub (w/ title)](https://github.com/ktj9279/jin_study "마우스 커서를 올리면 나타나는 타이틀")
+
+
+---
 
 
 ## Reference Links
----
+
 
 **Markdown code:**
 
@@ -242,8 +257,10 @@ https://github.com/ktj9279/jin_study
 [jin_study]: https://github.com/ktj9279/jin_study "https://github.com/ktj9279/jin_study"
 
 
-## Section Links and Anchors
 ---
+
+
+## Section Links and Anchors
 
 
 * You can link directly to a section in a rendered file by hovering over the section heading to expose the link. (section heading 위에 마우스를 올렸을 때 우측에 뜨는 링크 아이콘을 클릭하면 해당 section의 시작 위치로 스크롤이 이동된다.)
@@ -259,26 +276,28 @@ https://github.com/ktj9279/jin_study
 3. [Blockquotes (Quoting Text)](#Blockquotes-(Quoting-Text))
 
 
-[Go to the top](#Markdown)
+[↑ Go to the top](#Markdown)  
+[↑ Go to the contents](#Markdown)  
 ```
 
 
 **Output:**
 
 
-## Contents
----
-
 1. [Headings](#Headings)
 2. [Styling Text](#Styling-Text)
 3. [Blockquotes (Quoting Text)](#Blockquotes-(Quoting-Text))
 
 
-[Go to the top](#Markdown)
+[↑ Go to the top](#Markdown)  
+[↑ Go to the contents](#Markdown)  
+
+
+---
 
 
 ## Lists
----
+
 
 **Markdown code:**
 
@@ -353,8 +372,11 @@ or
 3. list 3
 
 
-## Task Lists
 ---
+
+
+## Task Lists
+
 
 **Markdown code:**
 
@@ -376,8 +398,11 @@ or
 * [x] Task 4
 
 
-## Image
 ---
+
+
+## Image
+
 
 * Reference
    * [[GitHub] 이미지 사이즈 조절 & 정렬](https://blog.yena.io/studynote/2017/11/23/Github-resize-image.html)
@@ -401,24 +426,27 @@ or
 <img src="./figures/Octocat.png" title="Octocat">
 
 
-<img src="./figures/Octocat.png" alt="Octocat" style="width:300px;height:300px;">
+<img src="./figures/Octocat.png" alt="Octocat" style="width:200px;height:200px;">
 
 
-<img src="./figures/Octocat.png" alt="Octocat" width="300" height="300">
+<img src="./figures/Octocat.png" alt="Octocat" width="200" height="200">
 
 
-[<center><img src="./figures/Octocat.png" title="Octocat" style="width:300px"></center>](https://github.com/ktj9279/jin_study)
+[<center><img src="./figures/Octocat.png" title="Octocat" style="width:200px"></center>](https://github.com/ktj9279/jin_study)
 ```
 
 
 **Output:**  
 
 
-[<center><img src="./figures/Octocat.png" title="Octocat" style="width:300px"></center>](https://github.com/ktj9279/jin_study)
+[<center><img src="./figures/Octocat.png" title="Octocat" style="width:200px"></center>](https://github.com/ktj9279/jin_study)
+
+
+---
 
 
 ## Table
----
+
 
 * A balnk line before a table
 * Hyphens `-` to create each column's header
@@ -445,8 +473,11 @@ or
 | (2, 1) | (2, 2) | (2, 3) | (2, 4) |
 
 
-## Comments
 ---
+
+
+## Comments
+
 
 **Markdown code:**
 
@@ -469,8 +500,11 @@ or
 ※ No output
 
 
-## HTML Tags
 ---
+
+
+## HTML Tags
+
 
 * Reference
    * [글쓰기, 마크다운의 모든 것! <고급과정>](https://steemit.com/kr/@newiz/3)
@@ -538,8 +572,11 @@ x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>
 <q>큰따옴표</q>
 
 
-## Emoji
 ---
+
+
+## Emoji
+
 
 * [Emoji](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#using-emoji)
 * [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
