@@ -438,7 +438,13 @@ or
 <img src="./figures/Octocat.png" alt="Octocat" width="200">
 
 
-<img src="./figures/Octocat.png" alt="Octocat" style="width:200px;">
+<img src="./figures/Octocat.png" alt="Octocat" style="width:50;">
+
+
+<img src="./figures/Octocat.png" alt="Octocat" style="width:50px">
+
+
+<img src="./figures/Octocat.png" alt="Octocat" style="width:50%;">
 
 
 [<img src="./figures/Octocat.png" alt="Octocat" style="width:200px;">](https://github.com/ktj9279/jin_study)
