@@ -20,7 +20,7 @@
 
 1. [Headings](#Headings)
 2. [Styling Text](#Styling-Text)
-3. [Blockquotes (Quoting Text)](#Blockquotes-(Quoting-Text))
+3. [Blockquotes (Quoting Text)](#Blockquotes-Quoting-Text)
 4. [Quoting Code](#Quoting-Code)
 5. [Links](#Links)
 6. [Reference Links](#Reference-Links)
@@ -263,7 +263,7 @@ https://github.com/ktj9279/jin_study
 ## Section Links and Anchors
 
 
-* You can link directly to a section in a rendered file by hovering over the section heading to expose the link. (section heading 위에 마우스를 올렸을 때 우측에 뜨는 링크 아이콘을 클릭하면 해당 section의 시작 위치로 스크롤이 이동된다.)
+* You can link directly to a section in a rendered file by hovering over the section heading to expose the link. (section heading 위에 마우스를 올렸을 때 좌측 또는 우측에 뜨는 링크 아이콘을 클릭하면 해당 section의 시작 위치로 스크롤이 이동된다.)
 * 또한 anchors를 사용하여 목차 또는 특정 section의 위치로 이동하는 링크를 만들 수 있다.
 
 
@@ -273,7 +273,7 @@ https://github.com/ktj9279/jin_study
 ```markdown
 1. [Headings](#Headings)
 2. [Styling Text](#Styling-Text)
-3. [Blockquotes (Quoting Text)](#Blockquotes-(Quoting-Text))
+3. [Blockquotes (Quoting Text)](#Blockquotes-Quoting-Text)
 
 
 [↑ Go to the top](#Markdown)  
@@ -286,7 +286,7 @@ https://github.com/ktj9279/jin_study
 
 1. [Headings](#Headings)
 2. [Styling Text](#Styling-Text)
-3. [Blockquotes (Quoting Text)](#Blockquotes-(Quoting-Text))
+3. [Blockquotes (Quoting Text)](#Blockquotes-Quoting-Text)
 
 
 [↑ Go to the top](#Markdown)  
