@@ -435,7 +435,7 @@ or
 **Output:**  
 
 
-[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" width="200"></center>](https://github.com/ktj9279/jin_study){: target="_blank"}
+[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" width="200"></center>](https://github.com/ktj9279/jin_study)
 
 
 ---
