@@ -415,15 +415,11 @@ or
 
 ```markdown
 ![Octocat](./figures/Octocat.png)
+<img src="./figures/Octocat.png" alt="Octocat">
 
 
 ![Octocat](./figures/Octocat.png "Octocat")
-
-
-<img src="./figures/Octocat.png">
-
-
-<img src="./figures/Octocat.png" title="Octocat">
+<img src="./figures/Octocat.png" alt="Octocat" title="Octocat">
 
 
 <img src="./figures/Octocat.png" alt="Octocat" style="width:200px;height:200px;">
@@ -432,14 +428,26 @@ or
 <img src="./figures/Octocat.png" alt="Octocat" width="200" height="200">
 
 
-[<center><img src="./figures/Octocat.png" title="Octocat" style="width:200px"></center>](https://github.com/ktj9279/jin_study)
+[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" style="width:200px;"></center>](https://github.com/ktj9279/jin_study)
 ```
 
 
 **Output:**  
 
 
-[<center><img src="./figures/Octocat.png" title="Octocat" style="width:200px"></center>](https://github.com/ktj9279/jin_study)
+<img src="./figures/Octocat.png" alt="Octocat" width="200">
+
+
+<img src="./figures/Octocat.png" alt="Octocat" style="width:200px;">
+
+
+[<img src="./figures/Octocat.png" alt="Octocat" style="width:200px;">](https://github.com/ktj9279/jin_study)
+
+
+[<img src="./figures/Octocat.png" alt="Octocat" title="Octocat" style="width:200px;">](https://github.com/ktj9279/jin_study)
+
+
+[<center><img src="./figures/Octocat.png" alt="Octocat" title="Octocat" style="width:200px;"></center>](https://github.com/ktj9279/jin_study)
 
 
 ---
