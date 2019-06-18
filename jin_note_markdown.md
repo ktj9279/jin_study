@@ -6,7 +6,7 @@
 * Files with the `.md` or `.markdown` extension
 
 
-* Reference
+* References
    * GitHub Help > [Writing on GitHub](https://help.github.com/categories/writing-on-github/)
    * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
    * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
@@ -18,20 +18,29 @@
 ## Contents
 
 
-1. [Headings](#Headings)
-2. [Styling Text](#Styling-Text)
-3. [Blockquotes (Quoting Text)](#Blockquotes-Quoting-Text)
-4. [Quoting Code](#Quoting-Code)
-5. [Links](#Links)
-6. [Reference Links](#Reference-Links)
-7. [Section Links and Anchors](#Section-Links-and-Anchors)
-8. [Lists](#Lists)
-9. [Task Lists](#Task-Lists)
-10. [Image](#Image)
-11. [Table](#Table)
-12. [Comments](#Comments)
-13. [HTML Tags](#HTML-Tags)
-14. [Emoji](#Emoji)
+- [Markdown](#markdown)
+  - [Contents](#contents)
+  - [Headings](#headings)
+- [Heading 1](#heading-1)
+  - [Heading 2](#heading-2)
+    - [Heading 3](#heading-3)
+      - [Heading 4](#heading-4)
+        - [Heading 5](#heading-5)
+          - [Heading 6](#heading-6)
+  - [Styling Text](#styling-text)
+  - [Blockquotes (Quoting Text)](#blockquotes-quoting-text)
+  - [Quoting Code](#quoting-code)
+  - [Links](#links)
+  - [Reference Links](#reference-links)
+  - [Section Links and Anchors](#section-links-and-anchors)
+  - [Lists](#lists)
+  - [Task Lists](#task-lists)
+  - [Image](#image)
+  - [Table](#table)
+  - [Comments](#comments)
+  - [Math](#math)
+  - [HTML Tags](#html-tags)
+  - [Emoji](#emoji)
 
 
 ---
@@ -404,7 +413,7 @@ or
 ## Image
 
 
-* Reference
+* References
    * [[GitHub] 이미지 사이즈 조절 & 정렬](https://blog.yena.io/studynote/2017/11/23/Github-resize-image.html)
    * [HTML Images](https://www.w3schools.com/html/html_images.asp)
    * [CSS Image Gallery](https://www.w3schools.com/css/css_image_gallery.asp)
@@ -414,16 +423,25 @@ or
 
 
 ```markdown
+1. 기본 형태
+
+
 ![Octocat](./figures/Octocat.png)
 
 
 <img src="./figures/Octocat.png" alt="Octocat">
 
 
+2. 제목 추가
+
+
 ![Octocat](./figures/Octocat.png "Octocat")
 
 
 <img src="./figures/Octocat.png" alt="Octocat" title="Octocat">
+
+
+3. 사이즈 조절 및 링크 추가
 
 
 <img src="./figures/Octocat.png" alt="Octocat" style="width:200px;height:200px;">
@@ -503,10 +521,75 @@ or
 ---
 
 
+## Math
+
+
+LaTeX 문법을 사용하여 수식 입력
+
+
+* References
+   * [위키독스 수식입력](https://wikidocs.net/1679)
+   * [마크다운과 수학 표현식이 만나다.](http://pad.haroopress.com/page.html?f=mathematics-expression)
+   * [깃헙 블로그에 수식 입력하기](https://cameliaovo.github.io/2018/04/12/write-equation-in-blog/)
+   * [Daum Equation Editor](http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html)
+   * [LaTeX-Tutorial.com](https://www.latex-tutorial.com/)
+   * tutorialspoint > [tex - Tutorial](https://www.tutorialspoint.com/tex_commands/index.htm)
+
+
+**Markdown code:**
+
+
+```markdown
+Eq. 1-1. Inline: ${{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+
+
+Eq. 1-2. Inline with some options: ${\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+
+
+Eq. 2-1. Block:
+$$
+{{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
+$$
+
+
+Eq. 2-2. Block with some options:
+$$
+{\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
+$$
+```
+
+
+※ `\displaystyle`: The displaystyle affects the amount of vertical space used to lay out a formula: when true, the more spacious layout of displayed equations is used, whereas when false a more compact layout of inline formula is used.
+
+
+**Output:**  
+
+
+Eq. 1-1. Inline: ${{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+
+
+Eq. 1-2. Inline with some options: ${\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+
+
+Eq. 2-1. Block:
+$$
+{{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
+$$
+
+
+Eq. 2-2. Block with some options:
+$$
+{\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
+$$
+
+
+---
+
+
 ## HTML Tags
 
 
-* Reference
+* References
    * [글쓰기, 마크다운의 모든 것! <고급과정>](https://steemit.com/kr/@newiz/3)
 
 
