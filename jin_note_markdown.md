@@ -21,12 +21,6 @@
 - [Markdown](#markdown)
   - [Contents](#contents)
   - [Headings](#headings)
-- [Heading 1](#heading-1)
-  - [Heading 2](#heading-2)
-    - [Heading 3](#heading-3)
-      - [Heading 4](#heading-4)
-        - [Heading 5](#heading-5)
-          - [Heading 6](#heading-6)
   - [Styling Text](#styling-text)
   - [Blockquotes (Quoting Text)](#blockquotes-quoting-text)
   - [Quoting Code](#quoting-code)
@@ -65,12 +59,7 @@
 **Output:**
 
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+※ Contents 목록 자동 생성 때문에 생략함.
 
 
 ---
@@ -477,8 +466,8 @@ or
 ```markdown
 | Header 1 | Header 2 | Header 3 | Header 4 |
 | -------- | :------- | :------: | -------: |
-| (1, 1) | (1, 2) | (1, 3) | (1, 4) |
-| (2, 1) | (2, 2) | (2, 3) | (2, 4) |
+| (1, 1)     | (1, 2)     |   (1, 3)   |     (1, 4) |
+| (2, 1)     | (2, 2)     |   (2, 3)   |     (2, 4) |
 ```
 
 
@@ -530,7 +519,7 @@ LaTeX 문법을 사용하여 수식 입력
 * References
    * [위키독스 수식입력](https://wikidocs.net/1679)
    * [마크다운과 수학 표현식이 만나다.](http://pad.haroopress.com/page.html?f=mathematics-expression)
-   * [깃헙 블로그에 수식 입력하기](https://cameliaovo.github.io/2018/04/12/write-equation-in-blog/)
+   <!-- * [깃헙 블로그에 수식 입력하기](https://cameliaovo.github.io/2018/04/12/write-equation-in-blog/) -->
    * [Daum Equation Editor](http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html)
    * [LaTeX-Tutorial.com](https://www.latex-tutorial.com/)
    * tutorialspoint > [tex - Tutorial](https://www.tutorialspoint.com/tex_commands/index.htm)
@@ -581,6 +570,9 @@ Eq. 2-2. Block with some options:
 $$
 {\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
 $$
+
+
+※ GitHub에서는 LaTex 수식 렌더링이 되지 않는다.
 
 
 ---
