@@ -347,7 +347,7 @@ or
 **Output:**  
 
 
-1. Unordered list
+1'. Unordered list
 
 
 * list 1
@@ -360,7 +360,7 @@ or
 * list 3
 
 
-2. Oredered list
+2'. Oredered list
 
 
 1. list 1
@@ -531,19 +531,23 @@ LaTeX 문법을 사용하여 수식 입력
 
 
 ```markdown
-Eq. 1-1. Inline: ${{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+1-1. Inline: ${{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
 
 
-Eq. 1-2. Inline with some options: ${\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+1-2. Inline with some options: ${\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
 
 
-Eq. 2-1. Block:
+2-1. Block
+
+
 $$
 {{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
 $$
 
 
-Eq. 2-2. Block with some options:
+2-2. Block with some options
+
+
 $$
 {\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
 $$
@@ -556,19 +560,23 @@ $$
 **Output:**  
 
 
-Eq. 1-1. Inline: ${{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+1-1. Inline: ${{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
 
 
-Eq. 1-2. Inline with some options: ${\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
+1-2. Inline with some options: ${\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}$
 
 
-Eq. 2-1. Block:
+2-1. Block
+
+
 $$
 {{MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
 $$
 
 
-Eq. 2-2. Block with some options:
+2-2. Block with some options
+
+
 $$
 {\displaystyle \operatorname {MSE} = {\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}}
 $$
