@@ -139,7 +139,7 @@ _Italic_
 **Markdown code:**
 
 
-* Within a sentence
+1. Within a sentence
 
 
 ```markdown
@@ -147,7 +147,7 @@ Hello `Quote` world!
 ```
 
 
-* Distinct block
+2. Distinct block
 
 
 ```markdown
@@ -163,13 +163,13 @@ import numpy as np
 **Output:**  
 
 
-* Within a sentence
+1. Within a sentence
 
 
 Hello `Quote` world!
 
 
-* Distinct block
+2. Distinct block
 
 
 ```python
@@ -228,8 +228,8 @@ https://github.com/ktj9279/jin_study
 [Jin's GitHub][1]  
 [TensorFlow][2]  
 [PyTorch][3]  
-[Jin's GitHub][1]  
-[Jin's GitHub w/ title][jin_study]  
+[Jin's GitHub (reuse: reference 1)][1]  
+[Jin's GitHub (w/ title)][jin_study]  
 
 
 [1]: https://github.com/ktj9279/jin_study
@@ -245,14 +245,14 @@ https://github.com/ktj9279/jin_study
 [Jin's GitHub][1]  
 [TensorFlow][2]  
 [PyTorch][3]  
-[Jin's GitHub][1]  
-[Jin's GitHub w/ title][jin_study]  
+[Jin's GitHub (reuse: reference 1)][1]  
+[Jin's GitHub (w/ title)][jin_study]  
 
 
 [1]: https://github.com/ktj9279/jin_study
 [2]: https://www.tensorflow.org/
 [3]: https://pytorch.org/
-[jin_study]: https://github.com/ktj9279/jin_study "https://github.com/ktj9279/jin_study"
+[jin_study]: https://github.com/ktj9279/jin_study "Jin's GitHub"
 
 
 ---
@@ -262,7 +262,7 @@ https://github.com/ktj9279/jin_study
 
 
 * You can link directly to a section in a rendered file by hovering over the section heading to expose the link. (section heading 위에 마우스를 올렸을 때 좌측 또는 우측에 뜨는 링크 아이콘을 클릭하면 해당 section의 시작 위치로 스크롤이 이동된다.)
-* 또한 anchors를 사용하여 목차 또는 특정 section의 위치로 이동하는 링크를 만들 수 있다.
+* 또한 anchors를 사용하여 특정 section의 위치로 이동하는 링크를 만들 수 있다. 마크다운 문서의 앞부분에 목차를 만들 경우 유용하다.
 
 
 **Markdown code:**
@@ -274,21 +274,21 @@ https://github.com/ktj9279/jin_study
 3. [Blockquotes (Quoting Text)](#Blockquotes-Quoting-Text)
 
 
-[↑ Go to the top](#Markdown)  
-[↑ Go to the contents](#Markdown)  
+[↑ Go to the top](#markdown)  
+[↑ Go to the table of contents](#contents)  
 ```
 
 
 **Output:**
 
 
-1. [Headings](#Headings)
-2. [Styling Text](#Styling-Text)
-3. [Blockquotes (Quoting Text)](#Blockquotes-Quoting-Text)
+1. [Headings](#headings)
+2. [Styling Text](#styling-text)
+3. [Blockquotes (Quoting Text)](#blockquotes-quoting-text)
 
 
-[↑ Go to the top](#Markdown)  
-[↑ Go to the contents](#Markdown)  
+[↑ Go to the top](#markdown)  
+[↑ Go to the table of contents](#contents)  
 
 
 ---
@@ -300,7 +300,8 @@ https://github.com/ktj9279/jin_study
 **Markdown code:**
 
 
-* Unordered list
+1. Unordered list
+
 
 ```markdown
 * list 1
@@ -329,7 +330,8 @@ or
 ```
 
 
-* Oredered list
+2. Oredered list
+
 
 ```markdown
 1. list 1
@@ -345,7 +347,7 @@ or
 **Output:**  
 
 
-* Unordered list
+1. Unordered list
 
 
 * list 1
@@ -358,7 +360,7 @@ or
 * list 3
 
 
-* Oredered list
+2. Oredered list
 
 
 1. list 1
@@ -412,7 +414,7 @@ or
 
 
 ```markdown
-1. 기본 형태
+1. 기본
 
 
 ![Octocat](./figures/Octocat.png)
@@ -421,7 +423,7 @@ or
 <img src="./figures/Octocat.png" alt="Octocat">
 
 
-2. 제목 추가
+2. 타이틀 추가
 
 
 ![Octocat](./figures/Octocat.png "Octocat")
@@ -572,7 +574,7 @@ $$
 $$
 
 
-※ GitHub에서는 LaTex 수식 렌더링이 되지 않는다.
+※ GitHub는 LaTex 수식 렌더링을 지원하지 않는다.
 
 
 ---
