@@ -235,7 +235,7 @@ https://github.com/ktj9279/jin_study
 [1]: https://github.com/ktj9279/jin_study
 [2]: https://www.tensorflow.org/
 [3]: https://pytorch.org/
-[jin_study]: https://github.com/ktj9279/jin_study "https://github.com/ktj9279/jin_study"
+[jin_study]: https://github.com/ktj9279/jin_study "Jin's GitHub"
 ```
 
 
