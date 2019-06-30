@@ -33,7 +33,18 @@ Anaconda의 주요 기능이자 가장 큰 장점은 Python packages 간의 depe
 * Version: Anaconda 2019.03 (Conda 4.7.5)
 
 
-2019년 6월 25일 현재, Anaconda Distribution의 최신 버전은 Python 3.7을 기반으로 한다. 그러나 TensorFlow와 Keras 최신 버전은 Python 3.7과 호환이 안 되므로, Anaconda Documentation에서 권장하는 방법을 사용하여 Anaconda 설치 및 Python 3.6 environment를 구축하였다.
+2019년 6월 25일 현재, Anaconda Distribution의 최신 버전은 Python 3.7을 기반으로 한다. 그러나 TensorFlow 1.13과 Keras 2.24는 Python 3.7과 호환이 안 되므로, Anaconda Documentation에서 권장하는 방법을 사용하여 Anaconda 설치 및 Python 3.6 environment를 구축하였다.
+
+
+※ 이 문서를 만들고 이틀인가 삼일만에 TensorFlow 1.13부터 Python 3.7과 호환된다고 공식문서가 업데이트 되었다. Keras를 별도로 설치할 계획이 아니라 `tensorflow.keras`를 사용할 예정이라면 다운그레이드 할 필요 없이 그대로 Python 3.7을 사용하면 된다.
+
+
+※ Conda 4.7.5 업데이트 후 여러 가지 문제가 발생하였다. 4.6.14일 때 업데이트 해주던 packages를 최신 버전이라고 무시해버리거나, `conda update` 또는 `conda install` 시 대다수의 packages를 지워버리려고 한다. Root environment의 Python 버전을 3.6으로 다운그레이드 할 시에도 위와 같은 문제들이 발생하거나 아예 안 된다. GitHub에 여러 이슈들이 올라오는 중인것 같은데, 어차피 TensorFlow 1.14가 곧 업데이트 될 것 같으니 당분간 기다려보려고 한다. 다른 packages 설치 또는 업데이트 시 Conda도 자동 업데이트가 되는데, `conda config`로 자동 업데이트를 끌 수 있다. (`conda update conda` 또는 `conda update --all`을 하지 않는 이상 Conda가 자동으로 업데이트 되지 않는다.)
+
+
+```bash
+conda config --set auto_update_conda False
+```
 
 
 * References
@@ -45,6 +56,8 @@ Anaconda의 주요 기능이자 가장 큰 장점은 Python packages 간의 depe
 
 * Environment and requirements
    * Windows 10 (64 bit)
+   * NVIDIA driver 425.25
+   * Node.js 10.15.0
   
 
 > 1. Anaconda 설치 [(Installing on Windows)](https://docs.anaconda.com/anaconda/install/windows/)
@@ -76,13 +89,13 @@ conda create -n python3.6 python=3.6 anaconda
 or
 
 
-> ~~최신 버전의 Anaconda를 설치한 후 아래 명령어를 실행하여 root environment에 원하는 버전의 Python을 설치한다.~~
+> 최신 버전의 Anaconda를 설치한 후 아래 명령어를 실행하여 root environment에 원하는 버전의 Python을 설치한다.
 
 
 ~~`conda install python=3.6`~~
 
 
-※ Conda 4.7.5 업데이트 후 root environment의 Python 버전을 3.6으로 다운그레이드 할 시 여러 가지 문제가 발생한다.
+※ Conda 4.6.14까지는 이 방법을 사용해도 좋다.
 
 
 or
@@ -100,6 +113,7 @@ conda activate jin_python3.6_base
 conda install tqdm
 conda install opencv
 conda install -c conda-forge version_information
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 conda deactivate
 ```
 
@@ -136,6 +150,7 @@ conda create --clone jin_tensorflow1.13_base -n jin_tensorflow1.13
    * NVIDIA driver 387.34 ~~NVIDIA driver 418.56~~
    * Docker 18.06.1-ce, ~~Docker 18.09.5-CE~~
    * NVIDIA Docker 2.0.3 ~~NVIDIA Docker 2.0.3~~
+   * `#TODO:` Node.js ?
 
 
 > ~~1. Pull and run the official anaconda image.~~
@@ -196,6 +211,7 @@ conda install python=3.6
 conda update --all
 conda install opencv
 pip install version_information
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 
@@ -336,6 +352,10 @@ or
 # OpenCV 4.1.0
 conda install -c conda-forge opencv
 ```
+
+
+`# TODO:`
+### [ipywidgets]()
 
 
 ### [version_information](https://pypi.org/project/version_information/)
