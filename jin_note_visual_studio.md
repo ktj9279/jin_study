@@ -22,10 +22,13 @@ Edit.GoToDefinition | ```F12```
 Edit.GoToDeclaration | ```Ctrl+F12```
 Edit.CommentSelection | ```Ctrl+K, Ctrl+C```
 Edit.UncommentSelection | ```Ctrl+K, Ctrl+U```
+Edit.TabLeft | ```Shift+Tab```
 Edit.LineDelete | ```Ctrl+Shift+L```
 Edit.ToggleBookmark | ```Ctrl+K, Ctrl+K```
-Edit.NextBookmark | ```Ctrl+K, Ctrl+N```
 Edit.PreviousBookmark | ```Ctrl+K, Ctrl+P```
+Edit.NextBookmark | ```Ctrl+K, Ctrl+N```
+Edit.ToggleBookmark | ```Ctrl+K, Ctrl+K```
+Edit.FormatSelection (들여쓰기 자동정렬) | ```Ctrl+K, Ctrl+F```
 
 
 ### Build
@@ -51,6 +54,14 @@ Debug.StepOver | ```F10```
 Debug.StopDebugging | ```Shift+F5```
 Debug.Restart | ```Ctrl+Shift+F5```
 Debug.RunToCursor | ```Ctrl+F10```
+
+
+### View
+
+
+Commands | Keyboard shortcut
+-------- | -----------------
+View.BookmarkWindow | ```Ctrl+K, Ctrl+W```
 
 
 ---
