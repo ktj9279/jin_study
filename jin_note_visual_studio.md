@@ -8,14 +8,14 @@
 
 
 * References
-   * [Default keyboard shortcuts in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2017#text-editor)
+   * [Popular keyboard shortcuts for Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio?view=vs-2017)
 
 
 ### Text Editor
 
 
-Commands | Keyboard shortcut
--------- | -----------------
+Commands | Keyboard shortcuts
+-------- | ------------------
 Edit.CompleteWord | ```Ctrl+Spacebar``` <br> or <br> ```Alt+Right Arrow```
 Edit.ParameterInfo | ```Ctrl+K, P```, ```Ctrl+K, Ctrl+P``` <br> or <br> ```Ctrl+Shift+Spacebar```
 Edit.GoToDefinition | ```F12```
@@ -34,8 +34,8 @@ Edit.FormatSelection (들여쓰기 자동정렬) | ```Ctrl+K, Ctrl+F```
 ### Build
 
 
-Commands | Keyboard shortcut
--------- | -----------------
+Commands | Keyboard shortcuts
+-------- | ------------------
 Build.BuildSolution | ```Ctrl+Shift+B```
 Build.Compile | ```Ctrl+F7```
 
@@ -43,8 +43,8 @@ Build.Compile | ```Ctrl+F7```
 ### Debug
 
 
-Commands | Keyboard shortcut
--------- | -----------------
+Commands | Keyboard shortcuts
+-------- | ------------------
 Debug.ToggleBreakpoint | ```F9```
 Debug.EnableBreakpoint | ```Ctrl+F9```
 Debug.Start | ```F5```
@@ -59,8 +59,8 @@ Debug.RunToCursor | ```Ctrl+F10```
 ### View
 
 
-Commands | Keyboard shortcut
--------- | -----------------
+Commands | Keyboard shortcuts
+-------- | ------------------
 View.BookmarkWindow | ```Ctrl+K, Ctrl+W```
 
 
