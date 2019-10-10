@@ -27,10 +27,110 @@ Anaconda의 주요 기능이자 가장 큰 장점은 Python packages 간의 depe
 ---
 
 
-## Install Anaconda and Create an Environment for Python 3.7
+## Install Miniconda and Create Environments for Python 3.7
 
 
-* Version: Anaconda 2019.07 (Conda 4.7.10)
+* Version: Miniconda 2019.07 (Conda 4.7.10 → 4.7.12)
+
+
+정했습니다! 앞으로는 Miniconda만 쓰기로! Anaconda는 계속 이런저런 문제가 발생하네요...
+
+
+* References
+    * [Anaconda](https://www.anaconda.com/distribution/)
+    * Anaconda > Documentation > Anaconda Distribution > [Installation](https://docs.anaconda.com/anaconda/install/)
+    * [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+
+* Environment and requirements
+    * Windows 10 (64 bit)
+    * NVIDIA driver 436.02
+
+
+> 1. Install Miniconda [(Installing on Windows)](https://docs.anaconda.com/anaconda/install/windows/)
+
+
+※ Anaconda Prompt를 실행하기 전에 속성에 들어가서 `시작 위치`를 본인의 workspace로 설정하면, 켤 때마다 매번 이동해야 하는 번거로움을 덜 수 있다.
+
+
+> 2. Conda 및 root(base) environment의 기본 packages 업데이트
+
+
+```bash
+conda update conda
+conda update --all
+```
+
+
+> 3. Create a new environment for Python 3.7
+
+
+```bash
+conda create -n python3.7 python
+```
+
+
+> 4. 필요한 packages 설치 및 Python base 환경 구축
+
+
+```bash
+conda create -n jin_python3.7_base --clone python3.7
+conda activate jin_python3.7_base
+
+# Install essential packages with h5py and hdf5.
+conda install jupyter jupyterlab
+conda install numpy scipy pandas xlrd
+conda install matplotlib seaborn pillow
+conda install scikit-learn scikit-image
+
+# Others
+conda install pywin32
+conda install beautifulsoup4
+conda install markdown
+# conda install numba
+
+# Install Node.js and JupyterLab extension for ipywidgets.
+conda install -c conda-forge nodejs
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter lab build
+
+# Install OpenCV.
+conda install -c conda-forge opencv
+
+# Install packages for medical imaging.
+conda install -c conda-forge pydicom nibabel
+conda install -c simpleitk simpleitk
+
+# Install version_information.
+conda install -c conda-forge version_information
+
+conda deactivate
+```
+
+
+> 5. TensorFlow (with GPU Support) 설치 및 환경 구축
+
+
+```bash
+conda create -n jin_tensorflow1.14_base --clone jin_python3.7_base
+conda activate jin_tensorflow1.14_base
+
+# Install TensorFlow
+conda install tensorflow-gpu
+
+conda deactivate
+
+conda create -n jin_tensorflow1.14 --clone jin_tensorflow1.14_base
+```
+
+
+---
+
+
+## Install Anaconda and Create Environments for Python 3.7
+
+
+* Version: Anaconda 2019.07 (Conda 4.7.10 → 4.7.11)
 
 
 * References
@@ -43,10 +143,7 @@ Anaconda의 주요 기능이자 가장 큰 장점은 Python packages 간의 depe
     * NVIDIA driver 436.02
 
 
-> 1. Anaconda 설치 [(Installing on Windows)](https://docs.anaconda.com/anaconda/install/windows/)
-
-
-※ Anaconda Prompt를 실행하기 전에 속성에 들어가서 `시작 위치`를 본인의 workspace로 설정하면, 켤 때마다 매번 이동해야 하는 번거로움을 덜 수 있다.
+> 1. Install Anaconda [(Installing on Windows)](https://docs.anaconda.com/anaconda/install/windows/)
 
 
 > 2. Update `conda` ~~(Conda 및 root(base) environment의 기본 packages 업데이트)~~
@@ -56,6 +153,7 @@ Anaconda의 주요 기능이자 가장 큰 장점은 Python packages 간의 depe
 conda update conda
 # conda update --all
 ```
+
 
 > 3. Create a new environment for Python 3.7
 
@@ -112,7 +210,7 @@ conda create -n jin_tensorflow1.14 --clone jin_tensorflow1.14_base
 ---
 
 
-## Install Anaconda and Create an Environment for Python 3.6
+## Install Anaconda and Create Environments for Python 3.6
 
 
 * Version: Anaconda 2019.03 (Conda 4.7.5)
@@ -150,7 +248,7 @@ conda config --set auto_update_conda False
     * NVIDIA driver 425.25
   
 
-> 1. Anaconda 설치 [(Installing on Windows)](https://docs.anaconda.com/anaconda/install/windows/)
+> 1. Install Anaconda [(Installing on Windows)](https://docs.anaconda.com/anaconda/install/windows/)
 
 
 > 2. Update `conda` ~~(Conda 및 root(base) environment의 기본 packages 업데이트)~~
